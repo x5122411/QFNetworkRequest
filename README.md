@@ -1,12 +1,8 @@
 /**
 * 'QFNetworkRequest' encapsulates a network request as an object, which uses a request operation ('AFHTTPRequestOperation' or 'NSURLSessionTask') to perform network tasks.
-* Usage:
-*
-* @code
 
-#import "QFNetworkAgent.h"
 
-...
+eg:
 
 - (void)loadData {
     NSDictionary *parameters = @{ @"type": @(1), "size": @(10) };
