@@ -6,9 +6,11 @@ eg:
 
 - (void)loadData {
     NSDictionary *parameters = @{ @"type": @(1), "size": @(10) };
+    
     QFNetworkRequest *request = [[QFNetworkRequest alloc] initWithOwner:self 
                                                                 urlPath:@"/student_center/index"
                                                              parameters:parameters];
+                                                             
     request.cachePolicy = QFNetworkRequestReturnCacheDataThenLoad;
 
     [request startWithSuccessCallback:^(QFNetworkRequest * _Nonnull request) {
